@@ -21,7 +21,7 @@ input.onGesture(Gesture.Shake, function () {
         basic.pause(150)
         Enemy.change(LedSpriteProperty.Y, 1)
         basic.pause(150)
-        if (Enemy.get(LedSpriteProperty.Y) == 4 && Pause == 1) {
+        if (Enemy.get(LedSpriteProperty.Y) == 4 && Pause == 1 || Enemy.get(LedSpriteProperty.Y) == 4 && Pause == 1) {
             Enemy.delete()
             game.pause()
             break;
