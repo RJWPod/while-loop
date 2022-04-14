@@ -23,6 +23,7 @@ input.onGesture(Gesture.Shake, function () {
         basic.pause(150)
         if (Enemy.get(LedSpriteProperty.Y) == 4 && Pause == 1) {
             Enemy.delete()
+            game.pause()
             break;
         }
         if (Player.isTouching(Enemy)) {
